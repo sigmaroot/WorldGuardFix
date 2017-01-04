@@ -230,4 +230,18 @@ class Listeners implements Listener {
             }
         }
     }
+    
+	@EventHandler(ignoreCancelled = true)
+	public void disableFireworkDamage(EntityDamageByEntityEvent e) {
+		if (e.getDamager() instanceof Firework) {
+			if (e.getEntity() instanceof Player) {
+				Player target = (Player) e.getEntity();
+				if (!helper.isAllowed(target, DefaultFlag.PVP)) {
+					if (config.checkEnabled(Config.Node.FIREWORK_PVP, target.getLocation())) {
+						e.setCancelled(true);
+					}
+				}
+			}
+		}
+	}
 }

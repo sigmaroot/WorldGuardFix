@@ -74,7 +74,8 @@ public class Config {
         CHORUS_FRUIT        ("enableChorusFruitCheck"),
         BOAT_PLACE          ("enableBoatCheck"),
         END_CRYSTAL_PLACE   ("enableEndCrystalCheck"),
-        LILYPAD_BREAK       ("enableLilypadCheck");
+        LILYPAD_BREAK       ("enableLilypadCheck"),
+        FIREWORK_PVP        ("enableFireworkCheck");
 
         private String setting;
 
