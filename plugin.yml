@@ -1,7 +1,7 @@
 name: WorldGuardFix
-version: 1.7.4-DEV
-description: WorldGuard Fix for Minecraft 1.11
-author: Kakifrucht
+version: 1.7.5-dev-1
+description: WorldGuard Fix for Minecraft 1.12.1
+author: Kakifrucht, Steven M.
 website: https://halfminer.de
 
 main: de.halfminer.worldguardfix.WorldGuardFix
